@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Reflection & Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        button {
+            width: 50%;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #recommendations {
+            margin-top: 20px;
+            padding: 15px;
+            background: #eef9ff;
+            border-left: 5px solid #2196F3;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Final Reflection & Personalized Recommendations</h2>
+        <form id="reflectionForm">
+            <label for="reflection">When you faced this challenge, what is it that you could have done differently in the earlier part of your life?</label>
+            <textarea id="reflection" name="reflection" placeholder="Write your response here..."></textarea>
+            <button type="button" id="submitReflection">Submit</button>
+        </form>
+
+        <div id="recommendations">
+            <h3>Recommendations</h3>
+            <p id="recommendationText"></p>
+        </div>
+    </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    let responses = JSON.parse(localStorage.getItem("formResponses")) || {};
+    console.log("Retrieved Responses:", responses);
+
+    function isChecked(name, values) {
+        return responses[name] && Array.isArray(responses[name]) && responses[name].some(val => values.includes(val));
+    }
+
+    function analyzeResponses() {
+        let recommendations = [];
+
+        if (responses["q1_week"] || responses["q3_week"] || responses["q4_week"]) {
+            if (isChecked("q1_week", ["Anxiety and fear", "Shock and denial"]) ||
+                isChecked("q3_week", ["Periods of depression", "Emotionally numb"]) ||
+                isChecked("q4_week", ["Fear of mortality", "Loss of independence"])) {
+                recommendations.push("Consider seeking therapy or joining social support groups.");
+            }
+        }
+
+        if (responses["q16_week"] || responses["q18_week"]) {
+            if (isChecked("q16_week", ["High medical costs", "Reduced income", "Insurance gaps"]) ||
+                isChecked("q18_week", ["Delayed/skipped treatments", "Chose more affordable options"])) {
+                recommendations.push("Look into financial planning, insurance options, or government aid.");
+            }
+        }
+
+        if (responses["q6_week"] || responses["q9_week"]) {
+            if (isChecked("q6_week", ["Questioned beliefs", "No significant change"]) ||
+                isChecked("q9_week", ["Felt disconnected from spiritual or existential ideas"])) {
+                recommendations.push("Engage in meditation, read spiritual books, or seek guidance from mentors.");
+            }
+        }
+
+        if (responses["q11_week"] || responses["q13_week"]) {
+            if (isChecked("q11_week", ["I withdrew socially", "Caused strain"]) ||
+                isChecked("q13_week", ["Some people distanced themselves", "Mixed reactions"])) {
+                recommendations.push("Try to engage more in social activities and maintain a healthier lifestyle.");
+            }
+        }
+
+        if (responses["q21_week"] || responses["q23_week"]) {
+            if (isChecked("q21_week", ["Unsure", "No known family history"]) ||
+                isChecked("q23_week", ["No, I was unaware", "My family does not discuss medical history"])) {
+                recommendations.push("Discuss medical history with family and consider genetic counseling if needed.");
+            }
+        }
+
+        let recommendationText = document.getElementById("recommendationText");
+        let recommendationDiv = document.getElementById("recommendations");
+
+        if (recommendations.length > 0) {
+            recommendationText.innerHTML = recommendations.join("<br><br>");
+            recommendationDiv.style.display = "block";
+        } else {
+            recommendationText.innerHTML = "No areas need improvement. Keep up the good work!";
+            recommendationDiv.style.display = "block";
+        }
+    }
+
+    // ✅ Ensure the Submit button exists before adding an event listener
+    let submitButton = document.getElementById("submitReflection");
+    if (submitButton) {
+        submitButton.addEventListener("click", function () {
+            analyzeResponses();
+        });
+    }
+});
+
+</script>
+
+</body>
+</html>

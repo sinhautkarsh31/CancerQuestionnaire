@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Aspect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            width: 50%;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Historical Aspect</h2>
+        <form id="historicalForm">
+            <table>
+                <tr>
+                    <th>Question</th>
+                    <th>First Week</th>
+                    <th>First 3 Months</th>
+                    <th>After 1 Year</th>
+                </tr>
+                <tr>
+                    <td>Do you have a family history of cancer?</td>
+                    <td>
+                        <input type="checkbox" name="q21_week" value="Yes, multiple family members"> Yes, multiple family members<br>
+                        <input type="checkbox" name="q21_week" value="Yes, one or two relatives"> Yes, one or two relatives<br>
+                        <input type="checkbox" name="q21_week" value="No known family history"> No known family history<br>
+                        <input type="checkbox" name="q21_week" value="Unsure"> Unsure<br>
+                        <input type="text" name="q21_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q21_months" value="Yes, multiple family members"> Yes, multiple family members<br>
+                        <input type="checkbox" name="q21_months" value="Yes, one or two relatives"> Yes, one or two relatives<br>
+                        <input type="checkbox" name="q21_months" value="No known family history"> No known family history<br>
+                        <input type="checkbox" name="q21_months" value="Unsure"> Unsure<br>
+                        <input type="text" name="q21_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q21_year" value="Yes, multiple family members"> Yes, multiple family members<br>
+                        <input type="checkbox" name="q21_year" value="Yes, one or two relatives"> Yes, one or two relatives<br>
+                        <input type="checkbox" name="q21_year" value="No known family history"> No known family history<br>
+                        <input type="checkbox" name="q21_year" value="Unsure"> Unsure<br>
+                        <input type="text" name="q21_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>If yes, which family members were affected?</td>
+                    <td>
+                        <input type="checkbox" name="q22_week" value="Parents"> Parents<br>
+                        <input type="checkbox" name="q22_week" value="Siblings"> Siblings<br>
+                        <input type="checkbox" name="q22_week" value="Grandparents"> Grandparents<br>
+                        <input type="checkbox" name="q22_week" value="Aunts/Uncles"> Aunts/Uncles<br>
+                        <input type="text" name="q22_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q22_months" value="Parents"> Parents<br>
+                        <input type="checkbox" name="q22_months" value="Siblings"> Siblings<br>
+                        <input type="checkbox" name="q22_months" value="Grandparents"> Grandparents<br>
+                        <input type="checkbox" name="q22_months" value="Aunts/Uncles"> Aunts/Uncles<br>
+                        <input type="text" name="q22_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q22_year" value="Parents"> Parents<br>
+                        <input type="checkbox" name="q22_year" value="Siblings"> Siblings<br>
+                        <input type="checkbox" name="q22_year" value="Grandparents"> Grandparents<br>
+                        <input type="checkbox" name="q22_year" value="Aunts/Uncles"> Aunts/Uncles<br>
+                        <input type="text" name="q22_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Were you aware of your family's medical history before your diagnosis?</td>
+                    <td>
+                        <input type="checkbox" name="q23_week" value="Yes, I was fully aware"> Yes, I was fully aware<br>
+                        <input type="checkbox" name="q23_week" value="I had some knowledge"> I had some knowledge<br>
+                        <input type="checkbox" name="q23_week" value="No, I was unaware"> No, I was unaware<br>
+                        <input type="checkbox" name="q23_week" value="My family does not discuss medical history"> My family does not discuss medical history<br>
+                        <input type="text" name="q23_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q23_months" value="Yes, I was fully aware"> Yes, I was fully aware<br>
+                        <input type="checkbox" name="q23_months" value="I had some knowledge"> I had some knowledge<br>
+                        <input type="checkbox" name="q23_months" value="No, I was unaware"> No, I was unaware<br>
+                        <input type="checkbox" name="q23_months" value="My family does not discuss medical history"> My family does not discuss medical history<br>
+                        <input type="text" name="q23_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q23_year" value="Yes, I was fully aware"> Yes, I was fully aware<br>
+                        <input type="checkbox" name="q23_year" value="I had some knowledge"> I had some knowledge<br>
+                        <input type="checkbox" name="q23_year" value="No, I was unaware"> No, I was unaware<br>
+                        <input type="checkbox" name="q23_year" value="My family does not discuss medical history"> My family does not discuss medical history<br>
+                        <input type="text" name="q23_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Did knowing your family history affect your approach to treatment?</td>
+                    <td>
+                        <input type="checkbox" name="q24_week" value="Yes, I was more proactive"> Yes, I was more proactive<br>
+                        <input type="checkbox" name="q24_week" value="No, it did not change my approach"> No, it did not change my approach<br>
+                        <input type="checkbox" name="q24_week" value="I became more cautious about lifestyle choices"> I became more cautious about lifestyle choices<br>
+                        <input type="checkbox" name="q24_week" value="I sought genetic counseling"> I sought genetic counseling<br>
+                        <input type="text" name="q24_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q24_months" value="Yes, I was more proactive"> Yes, I was more proactive<br>
+                        <input type="checkbox" name="q24_months" value="No, it did not change my approach"> No, it did not change my approach<br>
+                        <input type="checkbox" name="q24_months" value="I became more cautious about lifestyle choices"> I became more cautious about lifestyle choices<br>
+                        <input type="checkbox" name="q24_months" value="I sought genetic counseling"> I sought genetic counseling<br>
+                        <input type="text" name="q24_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q24_year" value="Yes, I was more proactive"> Yes, I was more proactive<br>
+                        <input type="checkbox" name="q24_year" value="No, it did not change my approach"> No, it did not change my approach<br>
+                        <input type="checkbox" name="q24_year" value="I became more cautious about lifestyle choices"> I became more cautious about lifestyle choices<br>
+                        <input type="checkbox" name="q24_year" value="I sought genetic counseling"> I sought genetic counseling<br>
+                        <input type="text" name="q24_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Have you taken steps to educate your family members about cancer risks?</td>
+                    <td>
+                        <input type="checkbox" name="q25_week" value="Yes, I discuss it openly"> Yes, I discuss it openly<br>
+                        <input type="checkbox" name="q25_week" value="No, but I plan to"> No, but I plan to<br>
+                        <input type="checkbox" name="q25_week" value="No, I prefer not to"> No, I prefer not to<br>
+                        <input type="checkbox" name="q25_week" value="I encourage screening and check-ups"> I encourage screening and check-ups<br>
+                        <input type="text" name="q25_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q25_months" value="Yes, I discuss it openly"> Yes, I discuss it openly<br>
+                        <input type="checkbox" name="q25_months" value="No, but I plan to"> No, but I plan to<br>
+                        <input type="checkbox" name="q25_months" value="No, I prefer not to"> No, I prefer not to<br>
+                        <input type="checkbox" name="q25_months" value="I encourage screening and check-ups"> I encourage screening and check-ups<br>
+                        <input type="text" name="q25_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q25_year" value="Yes, I discuss it openly"> Yes, I discuss it openly<br>
+                        <input type="checkbox" name="q25_year" value="No, but I plan to"> No, but I plan to<br>
+                        <input type="checkbox" name="q25_year" value="No, I prefer not to"> No, but I prefer not to<br>
+                        <input type="checkbox" name="q25_year" value="I encourage screening and check-ups"> I encourage screening and check-ups<br>
+                        <input type="text" name="q25_year_other" placeholder="Other">
+                    </td>
+                </tr>                
+            </table>
+            <button type="button" id="nextStep">Go to Next Step</button>
+        </form>
+    </div>
+
+<script>
+    function saveResponses() {
+    let responses = JSON.parse(localStorage.getItem("formResponses")) || {};
+
+    // ✅ Clear existing values before storing new ones (Fixes duplicates)
+    document.querySelectorAll("input[type='checkbox']").forEach(input => {
+        if (responses[input.name]) {
+            responses[input.name] = responses[input.name].filter(val => val !== input.value);
+        }
+    });
+
+    // ✅ Store only checked checkboxes
+    document.querySelectorAll("input[type='checkbox']:checked").forEach(input => {
+        if (!responses[input.name]) {
+            responses[input.name] = [];
+        }
+        responses[input.name].push(input.value);
+    });
+
+    // ✅ Store only changed dropdown & text input values
+    document.querySelectorAll("select, input[type='text'], input[type='number']").forEach(input => {
+        if (input.value.trim() !== "" && input.value !== input.defaultValue) {
+            responses[input.id] = input.value;
+        } else {
+            delete responses[input.id]; // Remove defaults
+        }
+    });
+
+    localStorage.setItem("formResponses", JSON.stringify(responses));
+    console.log("Responses Saved:", responses);
+}
+
+
+            
+    // ✅ Save responses and go to the next page
+    document.getElementById("nextStep").addEventListener("click", function() {
+        saveResponses();
+        window.location.href = "Final_Reflection.html"; // Update with actual next page name
+    });
+            
+    // ✅ Save responses and go to the final reflection
+    document.getElementById("goToFinalReflection").addEventListener("click", function() {
+        saveResponses();
+        window.location.href = "final_reflection.html";
+    });
+</script>
+
+</body>
+</html>    

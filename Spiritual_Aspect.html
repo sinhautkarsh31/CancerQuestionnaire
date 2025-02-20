@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual Aspect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            width: 50%;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Spiritual Aspect</h2>
+        <form id="spiritualForm">
+            <table>
+                <tr>
+                    <th>Question</th>
+                    <th>First Week</th>
+                    <th>First 3 Months</th>
+                    <th>After 1 Year</th>
+                </tr>
+                <tr>
+                    <td>Did your beliefs or faith change after your diagnosis?</td>
+                    <td>
+                        <input type="checkbox" name="q6_week" value="Strengthened faith"> Strengthened faith<br>
+                        <input type="checkbox" name="q6_week" value="Questioned beliefs"> Questioned beliefs<br>
+                        <input type="checkbox" name="q6_week" value="No significant change"> No significant change<br>
+                        <input type="checkbox" name="q6_week" value="Developed new perspectives"> Developed new perspectives<br>
+                        <input type="text" name="q6_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q6_months" value="Strengthened faith"> Strengthened faith<br>
+                        <input type="checkbox" name="q6_months" value="Questioned beliefs"> Questioned beliefs<br>
+                        <input type="checkbox" name="q6_months" value="No significant change"> No significant change<br>
+                        <input type="checkbox" name="q6_months" value="Developed new perspectives"> Developed new perspectives<br>
+                        <input type="text" name="q6_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q6_year" value="Strengthened faith"> Strengthened faith<br>
+                        <input type="checkbox" name="q6_year" value="Questioned beliefs"> Questioned beliefs<br>
+                        <input type="checkbox" name="q6_year" value="No significant change"> No significant change<br>
+                        <input type="checkbox" name="q6_year" value="Developed new perspectives"> Developed new perspectives<br>
+                        <input type="text" name="q6_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                <tr>
+                    <td>How did you seek spiritual or existential support?</td>
+                    <td>
+                        <input type="checkbox" name="q7_week" value="Prayer/meditation"> Prayer/meditation<br>
+                        <input type="checkbox" name="q7_week" value="Religious counseling"> Religious counseling<br>
+                        <input type="checkbox" name="q7_week" value="Reading spiritual literature"> Reading spiritual literature<br>
+                        <input type="checkbox" name="q7_week" value="Seeking purpose through life events"> Seeking purpose through life events<br>
+                        <input type="text" name="q7_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q7_months" value="Prayer/meditation"> Prayer/meditation<br>
+                        <input type="checkbox" name="q7_months" value="Religious counseling"> Religious counseling<br>
+                        <input type="checkbox" name="q7_months" value="Reading spiritual literature"> Reading spiritual literature<br>
+                        <input type="checkbox" name="q7_months" value="Seeking purpose through life events"> Seeking purpose through life events<br>
+                        <input type="text" name="q7_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q7_year" value="Prayer/meditation"> Prayer/meditation<br>
+                        <input type="checkbox" name="q7_year" value="Religious counseling"> Religious counseling<br>
+                        <input type="checkbox" name="q7_year" value="Reading spiritual literature"> Reading spiritual literature<br>
+                        <input type="checkbox" name="q7_year" value="Seeking purpose through life events"> Seeking purpose through life events<br>
+                        <input type="text" name="q7_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                <tr>
+                    <td>What role did hope and purpose play in your journey?</td>
+                    <td>
+                        <input type="checkbox" name="q8_week" value="Hope kept me motivated"> Hope kept me motivated<br>
+                        <input type="checkbox" name="q8_week" value="I struggled to find hope"> I struggled to find hope<br>
+                        <input type="checkbox" name="q8_week" value="I found purpose in helping others"> I found purpose in helping others<br>
+                        <input type="checkbox" name="q8_week" value="I focused on living in the present"> I focused on living in the present<br>
+                        <input type="text" name="q8_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q8_months" value="Hope kept me motivated"> Hope kept me motivated<br>
+                        <input type="checkbox" name="q8_months" value="I struggled to find hope"> I struggled to find hope<br>
+                        <input type="checkbox" name="q8_months" value="I found purpose in helping others"> I found purpose in helping others<br>
+                        <input type="checkbox" name="q8_months" value="I focused on living in the present"> I focused on living in the present<br>
+                        <input type="text" name="q8_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q8_year" value="Hope kept me motivated"> Hope kept me motivated<br>
+                        <input type="checkbox" name="q8_year" value="I struggled to find hope"> I struggled to find hope<br>
+                        <input type="checkbox" name="q8_year" value="I found purpose in helping others"> I found purpose in helping others<br>
+                        <input type="checkbox" name="q8_year" value="I focused on living in the present"> I focused on living in the present<br>
+                        <input type="text" name="q8_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>What was your biggest spiritual or philosophical realization?</td>
+                    <td>
+                        <input type="checkbox" name="q9_week" value="Life’s uncertainty made me appreciate small moments"> Life’s uncertainty made me appreciate small moments<br>
+                        <input type="checkbox" name="q9_week" value="Strength came from within rather than external sources"> Strength came from within rather than external sources<br>
+                        <input type="checkbox" name="q9_week" value="Everything happens for a reason"> Everything happens for a reason<br>
+                        <input type="checkbox" name="q9_week" value="I felt disconnected from spiritual or existential ideas"> I felt disconnected from spiritual or existential ideas<br>
+                        <input type="text" name="q9_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q9_months" value="Life’s uncertainty made me appreciate small moments"> Life’s uncertainty made me appreciate small moments<br>
+                        <input type="checkbox" name="q9_months" value="Strength came from within rather than external sources"> Strength came from within rather than external sources<br>
+                        <input type="checkbox" name="q9_months" value="Everything happens for a reason"> Everything happens for a reason<br>
+                        <input type="checkbox" name="q9_months" value="I felt disconnected from spiritual or existential ideas"> I felt disconnected from spiritual or existential ideas<br>
+                        <input type="text" name="q9_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q9_year" value="Life’s uncertainty made me appreciate small moments"> Life’s uncertainty made me appreciate small moments<br>
+                        <input type="checkbox" name="q9_year" value="Strength came from within rather than external sources"> Strength came from within rather than external sources<br>
+                        <input type="checkbox" name="q9_year" value="Everything happens for a reason"> Everything happens for a reason<br>
+                        <input type="checkbox" name="q9_year" value="I felt disconnected from spiritual or existential ideas"> I felt disconnected from spiritual or existential ideas<br>
+                        <input type="text" name="q9_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Did you experience any sense of peace or acceptance?</td>
+                    <td>
+                        <input type="checkbox" name="q10_week" value="Yes, I found inner peace"> Yes, I found inner peace<br>
+                        <input type="checkbox" name="q10_week" value="Sometimes, but I still struggled with acceptance"> Sometimes, but I still struggled with acceptance<br>
+                        <input type="checkbox" name="q10_week" value="No, I remained anxious about the future"> No, I remained anxious about the future<br>
+                        <input type="checkbox" name="q10_week" value="I don’t think about acceptance in this way"> I don’t think about acceptance in this way<br>
+                        <input type="text" name="q10_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q10_months" value="Yes, I found inner peace"> Yes, I found inner peace<br>
+                        <input type="checkbox" name="q10_months" value="Sometimes, but I still struggled with acceptance"> Sometimes, but I still struggled with acceptance<br>
+                        <input type="checkbox" name="q10_months" value="No, I remained anxious about the future"> No, I remained anxious about the future<br>
+                        <input type="checkbox" name="q10_months" value="I don’t think about acceptance in this way"> I don’t think about acceptance in this way<br>
+                        <input type="text" name="q10_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q10_year" value="Yes, I found inner peace"> Yes, I found inner peace<br>
+                        <input type="checkbox" name="q10_year" value="Sometimes, but I still struggled with acceptance"> Sometimes, but I still struggled with acceptance<br>
+                        <input type="checkbox" name="q10_year" value="No, I remained anxious about the future"> No, I remained anxious about the future<br>
+                        <input type="checkbox" name="q10_year" value="I don’t think about acceptance in this way"> I don’t think about acceptance in this way<br>
+                        <input type="text" name="q10_year_other" placeholder="Other">
+                    </td>
+                </tr>                
+            </table>
+            <button type="button" id="nextStep">Go to Next Step</button>
+        </form>
+    </div>
+
+<script>
+    function saveResponses() {
+    let responses = JSON.parse(localStorage.getItem("formResponses")) || {};
+
+    // ✅ Clear existing values before storing new ones (Fixes duplicates)
+    document.querySelectorAll("input[type='checkbox']").forEach(input => {
+        if (responses[input.name]) {
+            responses[input.name] = responses[input.name].filter(val => val !== input.value);
+        }
+    });
+
+    // ✅ Store only checked checkboxes
+    document.querySelectorAll("input[type='checkbox']:checked").forEach(input => {
+        if (!responses[input.name]) {
+            responses[input.name] = [];
+        }
+        responses[input.name].push(input.value);
+    });
+
+    // ✅ Store only changed dropdown & text input values
+    document.querySelectorAll("select, input[type='text'], input[type='number']").forEach(input => {
+        if (input.value.trim() !== "" && input.value !== input.defaultValue) {
+            responses[input.id] = input.value;
+        } else {
+            delete responses[input.id]; // Remove defaults
+        }
+    });
+
+    localStorage.setItem("formResponses", JSON.stringify(responses));
+    console.log("Responses Saved:", responses);
+}
+
+        
+    // ✅ Save responses and go to the next page
+    document.getElementById("nextStep").addEventListener("click", function() {
+        saveResponses();
+        window.location.href = "Social_and_Lifestyle_Aspect.html"; // Update with actual next page name
+    });
+        
+    // ✅ Save responses and go to the final reflection
+    document.getElementById("goToFinalReflection").addEventListener("click", function() {
+        saveResponses();
+        window.location.href = "final_reflection.html";
+    });
+</script>
+
+</body>
+</html>

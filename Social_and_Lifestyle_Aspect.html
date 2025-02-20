@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social & Lifestyle Aspect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            width: 50%;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Social & Lifestyle Aspect</h2>
+        <form id="socialForm">
+            <table>
+                <tr>
+                    <th>Question</th>
+                    <th>First Week</th>
+                    <th>First 3 Months</th>
+                    <th>After 1 Year</th>
+                </tr>
+                <tr>
+                    <td>How did your diagnosis impact your personal relationships?</td>
+                    <td>
+                        <input type="checkbox" name="q11_week" value="Strengthened relationships"> Strengthened relationships<br>
+                        <input type="checkbox" name="q11_week" value="Caused strain"> Caused strain<br>
+                        <input type="checkbox" name="q11_week" value="Made me value relationships more"> Made me value relationships more<br>
+                        <input type="checkbox" name="q11_week" value="I withdrew socially"> I withdrew socially<br>
+                        <input type="text" name="q11_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q11_months" value="Strengthened relationships"> Strengthened relationships<br>
+                        <input type="checkbox" name="q11_months" value="Caused strain"> Caused strain<br>
+                        <input type="checkbox" name="q11_months" value="Made me value relationships more"> Made me value relationships more<br>
+                        <input type="checkbox" name="q11_months" value="I withdrew socially"> I withdrew socially<br>
+                        <input type="text" name="q11_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q11_year" value="Strengthened relationships"> Strengthened relationships<br>
+                        <input type="checkbox" name="q11_year" value="Caused strain"> Caused strain<br>
+                        <input type="checkbox" name="q11_year" value="Made me value relationships more"> Made me value relationships more<br>
+                        <input type="checkbox" name="q11_year" value="I withdrew socially"> I withdrew socially<br>
+                        <input type="text" name="q11_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Did you continue working or pursuing daily activities?</td>
+                    <td>
+                        <input type="checkbox" name="q12_week" value="Continued as usual"> Continued as usual<br>
+                        <input type="checkbox" name="q12_week" value="Took a break but resumed later"> Took a break but resumed later<br>
+                        <input type="checkbox" name="q12_week" value="Made major lifestyle changes"> Made major lifestyle changes<br>
+                        <input type="checkbox" name="q12_week" value="Could not continue due to health"> Could not continue due to health<br>
+                        <input type="text" name="q12_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q12_months" value="Continued as usual"> Continued as usual<br>
+                        <input type="checkbox" name="q12_months" value="Took a break but resumed later"> Took a break but resumed later<br>
+                        <input type="checkbox" name="q12_months" value="Made major lifestyle changes"> Made major lifestyle changes<br>
+                        <input type="checkbox" name="q12_months" value="Could not continue due to health"> Could not continue due to health<br>
+                        <input type="text" name="q12_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q12_year" value="Continued as usual"> Continued as usual<br>
+                        <input type="checkbox" name="q12_year" value="Took a break but resumed later"> Took a break but resumed later<br>
+                        <input type="checkbox" name="q12_year" value="Made major lifestyle changes"> Made major lifestyle changes<br>
+                        <input type="checkbox" name="q12_year" value="Could not continue due to health"> Could not continue due to health<br>
+                        <input type="text" name="q12_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>How did your social circle react to your diagnosis?</td>
+                    <td>
+                        <input type="checkbox" name="q13_week" value="Supportive"> Supportive<br>
+                        <input type="checkbox" name="q13_week" value="Some people distanced themselves"> Some people distanced themselves<br>
+                        <input type="checkbox" name="q13_week" value="Mixed reactions"> Mixed reactions<br>
+                        <input type="checkbox" name="q13_week" value="I preferred to keep it private"> I preferred to keep it private<br>
+                        <input type="text" name="q13_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q13_months" value="Supportive"> Supportive<br>
+                        <input type="checkbox" name="q13_months" value="Some people distanced themselves"> Some people distanced themselves<br>
+                        <input type="checkbox" name="q13_months" value="Mixed reactions"> Mixed reactions<br>
+                        <input type="checkbox" name="q13_months" value="I preferred to keep it private"> I preferred to keep it private<br>
+                        <input type="text" name="q13_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q13_year" value="Supportive"> Supportive<br>
+                        <input type="checkbox" name="q13_year" value="Some people distanced themselves"> Some people distanced themselves<br>
+                        <input type="checkbox" name="q13_year" value="Mixed reactions"> Mixed reactions<br>
+                        <input type="checkbox" name="q13_year" value="I preferred to keep it private"> I preferred to keep it private<br>
+                        <input type="text" name="q13_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Did you participate in any support groups or communities?</td>
+                    <td>
+                        <input type="checkbox" name="q14_week" value="Yes, in-person groups"> Yes, in-person groups<br>
+                        <input type="checkbox" name="q14_week" value="Yes, online forums"> Yes, online forums<br>
+                        <input type="checkbox" name="q14_week" value="No, but I found support elsewhere"> No, but I found support elsewhere<br>
+                        <input type="checkbox" name="q14_week" value="I did not seek support from groups"> I did not seek support from groups<br>
+                        <input type="text" name="q14_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q14_months" value="Yes, in-person groups"> Yes, in-person groups<br>
+                        <input type="checkbox" name="q14_months" value="Yes, online forums"> Yes, online forums<br>
+                        <input type="checkbox" name="q14_months" value="No, but I found support elsewhere"> No, but I found support elsewhere<br>
+                        <input type="checkbox" name="q14_months" value="I did not seek support from groups"> I did not seek support from groups<br>
+                        <input type="text" name="q14_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q14_year" value="Yes, in-person groups"> Yes, in-person groups<br>
+                        <input type="checkbox" name="q14_year" value="Yes, online forums"> Yes, online forums<br>
+                        <input type="checkbox" name="q14_year" value="No, but I found support elsewhere"> No, but I found support elsewhere<br>
+                        <input type="checkbox" name="q14_year" value="I did not seek support from groups"> I did not seek support from groups<br>
+                        <input type="text" name="q14_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>What lifestyle changes did you make after diagnosis?</td>
+                    <td>
+                        <input type="checkbox" name="q15_week" value="Improved diet and exercise"> Improved diet and exercise<br>
+                        <input type="checkbox" name="q15_week" value="Focused on mental health"> Focused on mental health<br>
+                        <input type="checkbox" name="q15_week" value="Spent more time with loved ones"> Spent more time with loved ones<br>
+                        <input type="checkbox" name="q15_week" value="No major lifestyle changes"> No major lifestyle changes<br>
+                        <input type="text" name="q15_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q15_months" value="Improved diet and exercise"> Improved diet and exercise<br>
+                        <input type="checkbox" name="q15_months" value="Focused on mental health"> Focused on mental health<br>
+                        <input type="checkbox" name="q15_months" value="Spent more time with loved ones"> Spent more time with loved ones<br>
+                        <input type="checkbox" name="q15_months" value="No major lifestyle changes"> No major lifestyle changes<br>
+                        <input type="text" name="q15_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q15_year" value="Improved diet and exercise"> Improved diet and exercise<br>
+                        <input type="checkbox" name="q15_year" value="Focused on mental health"> Focused on mental health<br>
+                        <input type="checkbox" name="q15_year" value="Spent more time with loved ones"> Spent more time with loved ones<br>
+                        <input type="checkbox" name="q15_year" value="No major lifestyle changes"> No major lifestyle changes<br>
+                        <input type="text" name="q15_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+            </table>
+            <button type="button" id="nextStep">Go to Next Step</button>
+        </form>
+    </div>
+
+<script>
+    function saveResponses() {
+    let responses = JSON.parse(localStorage.getItem("formResponses")) || {};
+
+    // ✅ Clear existing values before storing new ones (Fixes duplicates)
+    document.querySelectorAll("input[type='checkbox']").forEach(input => {
+        if (responses[input.name]) {
+            responses[input.name] = responses[input.name].filter(val => val !== input.value);
+        }
+    });
+
+    // ✅ Store only checked checkboxes
+    document.querySelectorAll("input[type='checkbox']:checked").forEach(input => {
+        if (!responses[input.name]) {
+            responses[input.name] = [];
+        }
+        responses[input.name].push(input.value);
+    });
+
+    // ✅ Store only changed dropdown & text input values
+    document.querySelectorAll("select, input[type='text'], input[type='number']").forEach(input => {
+        if (input.value.trim() !== "" && input.value !== input.defaultValue) {
+            responses[input.id] = input.value;
+        } else {
+            delete responses[input.id]; // Remove defaults
+        }
+    });
+
+    localStorage.setItem("formResponses", JSON.stringify(responses));
+    console.log("Responses Saved:", responses);
+}
+
+            
+    // ✅ Save responses and go to the next page
+    document.getElementById("nextStep").addEventListener("click", function() {
+        saveResponses();
+        window.location.href = "Financial_Aspect.html"; // Update with actual next page name
+    });
+            
+    // ✅ Save responses and go to the final reflection
+    document.getElementById("goToFinalReflection").addEventListener("click", function() {
+        saveResponses();
+        window.location.href = "final_reflection.html";
+    });
+</script>
+
+</body>
+</html>    

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Aspect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            width: 50%;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Financial Aspect</h2>
+        <form id="financialForm">
+            <table>
+                <tr>
+                    <th>Question</th>
+                    <th>First Week</th>
+                    <th>First 3 Months</th>
+                    <th>After 1 Year</th>
+                </tr>
+                <tr>
+                    <td>What financial challenges did you face?</td>
+                    <td>
+                        <input type="checkbox" name="q16_week" value="High medical costs"> High medical costs<br>
+                        <input type="checkbox" name="q16_week" value="Reduced income"> Reduced income<br>
+                        <input type="checkbox" name="q16_week" value="Insurance gaps"> Insurance gaps<br>
+                        <input type="checkbox" name="q16_week" value="No major financial challenges"> No major financial challenges<br>
+                        <input type="text" name="q16_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q16_months" value="High medical costs"> High medical costs<br>
+                        <input type="checkbox" name="q16_months" value="Reduced income"> Reduced income<br>
+                        <input type="checkbox" name="q16_months" value="Insurance gaps"> Insurance gaps<br>
+                        <input type="checkbox" name="q16_months" value="No major financial challenges"> No major financial challenges<br>
+                        <input type="text" name="q16_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q16_year" value="High medical costs"> High medical costs<br>
+                        <input type="checkbox" name="q16_year" value="Reduced income"> Reduced income<br>
+                        <input type="checkbox" name="q16_year" value="Insurance gaps"> Insurance gaps<br>
+                        <input type="checkbox" name="q16_year" value="No major financial challenges"> No major financial challenges<br>
+                        <input type="text" name="q16_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>How did you manage your medical expenses?</td>
+                    <td>
+                        <input type="checkbox" name="q17_week" value="Personal savings"> Personal savings<br>
+                        <input type="checkbox" name="q17_week" value="Health insurance"> Health insurance<br>
+                        <input type="checkbox" name="q17_week" value="Financial aid"> Financial aid<br>
+                        <input type="checkbox" name="q17_week" value="Borrowed from family/friends"> Borrowed from family/friends<br>
+                        <input type="text" name="q17_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q17_months" value="Personal savings"> Personal savings<br>
+                        <input type="checkbox" name="q17_months" value="Health insurance"> Health insurance<br>
+                        <input type="checkbox" name="q17_months" value="Financial aid"> Financial aid<br>
+                        <input type="checkbox" name="q17_months" value="Borrowed from family/friends"> Borrowed from family/friends<br>
+                        <input type="text" name="q17_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q17_year" value="Personal savings"> Personal savings<br>
+                        <input type="checkbox" name="q17_year" value="Health insurance"> Health insurance<br>
+                        <input type="checkbox" name="q17_year" value="Financial aid"> Financial aid<br>
+                        <input type="checkbox" name="q17_year" value="Borrowed from family/friends"> Borrowed from family/friends<br>
+                        <input type="text" name="q17_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Did financial stress affect your treatment choices?</td>
+                    <td>
+                        <input type="checkbox" name="q18_week" value="Yes, I delayed/skipped treatments"> Yes, I delayed/skipped treatments<br>
+                        <input type="checkbox" name="q18_week" value="Yes, I chose more affordable options"> Yes, I chose more affordable options<br>
+                        <input type="checkbox" name="q18_week" value="No, I received the treatment I needed"> No, I received the treatment I needed<br>
+                        <input type="checkbox" name="q18_week" value="No financial stress"> No financial stress<br>
+                        <input type="text" name="q18_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q18_months" value="Yes, I delayed/skipped treatments"> Yes, I delayed/skipped treatments<br>
+                        <input type="checkbox" name="q18_months" value="Yes, I chose more affordable options"> Yes, I chose more affordable options<br>
+                        <input type="checkbox" name="q18_months" value="No, I received the treatment I needed"> No, I received the treatment I needed<br>
+                        <input type="checkbox" name="q18_months" value="No financial stress"> No financial stress<br>
+                        <input type="text" name="q18_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q18_year" value="Yes, I delayed/skipped treatments"> Yes, I delayed/skipped treatments<br>
+                        <input type="checkbox" name="q18_year" value="Yes, I chose more affordable options"> Yes, I chose more affordable options<br>
+                        <input type="checkbox" name="q18_year" value="No, I received the treatment I needed"> No, I received the treatment I needed<br>
+                        <input type="checkbox" name="q18_year" value="No financial stress"> No financial stress<br>
+                        <input type="text" name="q18_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>What financial resources or support would have helped?</td>
+                    <td>
+                        <input type="checkbox" name="q19_week" value="Better insurance"> Better insurance<br>
+                        <input type="checkbox" name="q19_week" value="Government aid"> Government aid<br>
+                        <input type="checkbox" name="q19_week" value="Employer benefits"> Employer benefits<br>
+                        <input type="checkbox" name="q19_week" value="More financial literacy"> More financial literacy<br>
+                        <input type="text" name="q19_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q19_months" value="Better insurance"> Better insurance<br>
+                        <input type="checkbox" name="q19_months" value="Government aid"> Government aid<br>
+                        <input type="checkbox" name="q19_months" value="Employer benefits"> Employer benefits<br>
+                        <input type="checkbox" name="q19_months" value="More financial literacy"> More financial literacy<br>
+                        <input type="text" name="q19_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q19_year" value="Better insurance"> Better insurance<br>
+                        <input type="checkbox" name="q19_year" value="Government aid"> Government aid<br>
+                        <input type="checkbox" name="q19_year" value="Employer benefits"> Employer benefits<br>
+                        <input type="checkbox" name="q19_year" value="More financial literacy"> More financial literacy<br>
+                        <input type="text" name="q19_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>If you could prepare financially before diagnosis, what would you do differently?</td>
+                    <td>
+                        <input type="checkbox" name="q20_week" value="Save more"> Save more<br>
+                        <input type="checkbox" name="q20_week" value="Get better insurance"> Get better insurance<br>
+                        <input type="checkbox" name="q20_week" value="Learn about financial aid"> Learn about financial aid<br>
+                        <input type="checkbox" name="q20_week" value="Nothing, I was prepared"> Nothing, I was prepared<br>
+                        <input type="text" name="q20_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q20_months" value="Save more"> Save more<br>
+                        <input type="checkbox" name="q20_months" value="Get better insurance"> Get better insurance<br>
+                        <input type="checkbox" name="q20_months" value="Learn about financial aid"> Learn about financial aid<br>
+                        <input type="checkbox" name="q20_months" value="Nothing, I was prepared"> Nothing, I was prepared<br>
+                        <input type="text" name="q20_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q20_year" value="Save more"> Save more<br>
+                        <input type="checkbox" name="q20_year" value="Get better insurance"> Get better insurance<br>
+                        <input type="checkbox" name="q20_year" value="Learn about financial aid"> Learn about financial aid<br>
+                        <input type="checkbox" name="q20_year" value="Nothing, I was prepared"> Nothing, I was prepared<br>
+                        <input type="text" name="q20_year_other" placeholder="Other">
+                    </td>
+                </tr>                
+                
+            </table>
+            <button type="button" id="nextStep">Go to Next Step</button>
+        </form>
+    </div>
+
+<script>
+    function saveResponses() {
+    let responses = JSON.parse(localStorage.getItem("formResponses")) || {};
+
+    // ✅ Clear existing values before storing new ones (Fixes duplicates)
+    document.querySelectorAll("input[type='checkbox']").forEach(input => {
+        if (responses[input.name]) {
+            responses[input.name] = responses[input.name].filter(val => val !== input.value);
+        }
+    });
+
+    // ✅ Store only checked checkboxes
+    document.querySelectorAll("input[type='checkbox']:checked").forEach(input => {
+        if (!responses[input.name]) {
+            responses[input.name] = [];
+        }
+        responses[input.name].push(input.value);
+    });
+
+    // ✅ Store only changed dropdown & text input values
+    document.querySelectorAll("select, input[type='text'], input[type='number']").forEach(input => {
+        if (input.value.trim() !== "" && input.value !== input.defaultValue) {
+            responses[input.id] = input.value;
+        } else {
+            delete responses[input.id]; // Remove defaults
+        }
+    });
+
+    localStorage.setItem("formResponses", JSON.stringify(responses));
+    console.log("Responses Saved:", responses);
+}
+
+
+            
+    // ✅ Save responses and go to the next page
+    document.getElementById("nextStep").addEventListener("click", function() {
+        saveResponses();
+        window.location.href = "Historical_Aspect.html"; // Update with actual next page name
+    });
+            
+    // ✅ Save responses and go to the final reflection
+    document.getElementById("goToFinalReflection").addEventListener("click", function() {
+        saveResponses();
+        window.location.href = "final_reflection.html";
+    });
+</script>
+</body>
+</html>    

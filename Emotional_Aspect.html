@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Aspect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            width: 50%;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Emotional Aspect</h2>
+        <form id="emotionalForm">
+            <table>
+                <tr>
+                    <th>Question</th>
+                    <th>First Week</th>
+                    <th>First 3 Months</th>
+                    <th>After 1 Year</th>
+                </tr>
+                <tr>
+                    <td>How did you emotionally process your diagnosis?</td>
+                    <td><input type="checkbox" name="q1_week" value="Shock and denial"> Shock and denial<br>
+                        <input type="checkbox" name="q1_week" value="Anxiety and fear"> Anxiety and fear<br>
+                        <input type="checkbox" name="q1_week" value="Acceptance and determination"> Acceptance and determination<br>
+                        <input type="checkbox" name="q1_week" value="Support from family and friends"> Support from family and friends<br>
+                        <input type="text" name="q1_week_other" placeholder="Other">
+                    </td>
+                    <td><input type="checkbox" name="q1_months" value="Shock and denial"> Shock and denial<br>
+                        <input type="checkbox" name="q1_months" value="Anxiety and fear"> Anxiety and fear<br>
+                        <input type="checkbox" name="q1_months" value="Acceptance and determination"> Acceptance and determination<br>
+                        <input type="checkbox" name="q1_months" value="Support from family and friends"> Support from family and friends<br>
+                        <input type="text" name="q1_months_other" placeholder="Other">
+                    </td>
+                    <td><input type="checkbox" name="q1_year" value="Shock and denial"> Shock and denial<br>
+                        <input type="checkbox" name="q1_year" value="Anxiety and fear"> Anxiety and fear<br>
+                        <input type="checkbox" name="q1_year" value="Acceptance and determination"> Acceptance and determination<br>
+                        <input type="checkbox" name="q1_year" value="Support from family and friends"> Support from family and friends<br>
+                        <input type="text" name="q1_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                <tr>
+                    <td>What coping strategies helped you manage your emotions?</td>
+                    <td><input type="checkbox" name="q1_week" value="Therapy or Counseling"> Therapy or Counseling<br>
+                        <input type="checkbox" name="q1_week" value="Meditation/Mindfulness"> Meditation/Mindfulness<br>
+                        <input type="checkbox" name="q1_week" value="Engaging in Hobbies"> Engaging in Hobbies<br>
+                        <input type="checkbox" name="q1_week" value="Support groups"> Support groups<br>
+                        <input type="text" name="q1_week_other" placeholder="Other">
+                    </td>
+                    <td><input type="checkbox" name="q1_months" value="Therapy or Counseling"> Therapy or Counseling<br>
+                        <input type="checkbox" name="q1_months" value="Meditation/Mindfulness"> Meditation/Mindfulness<br>
+                        <input type="checkbox" name="q1_months" value="Engaging in Hobbies"> Engaging in Hobbies<br>
+                        <input type="checkbox" name="q1_months" value="Support groups"> Support groups<br>
+                        <input type="text" name="q1_months_other" placeholder="Other">
+                    </td>
+                    <td><input type="checkbox" name="q1_year" value="Therapy or Counseling"> Therapy or Counseling<br>
+                        <input type="checkbox" name="q1_year" value="Meditation/Mindfulness"> Meditation/Mindfulness<br>
+                        <input type="checkbox" name="q1_year" value="Engaging in Hobbies"> Engaging in Hobbies<br>
+                        <input type="checkbox" name="q1_year" value="Support groups"> Support groups<br>
+                        <input type="text" name="q1_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                <tr>
+                    <td>How did your diagnosis affect your mental health?</td>
+                    <td>
+                        <input type="checkbox" name="q3_week" value="Increased stress/anxiety"> Increased stress/anxiety<br>
+                        <input type="checkbox" name="q3_week" value="Periods of depression"> Periods of depression<br>
+                        <input type="checkbox" name="q3_week" value="Strengthened resilience"> Strengthened resilience<br>
+                        <input type="checkbox" name="q3_week" value="Emotionally numb"> Emotionally numb<br>
+                        <input type="text" name="q3_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q3_months" value="Increased stress/anxiety"> Increased stress/anxiety<br>
+                        <input type="checkbox" name="q3_months" value="Periods of depression"> Periods of depression<br>
+                        <input type="checkbox" name="q3_months" value="Strengthened resilience"> Strengthened resilience<br>
+                        <input type="checkbox" name="q3_months" value="Emotionally numb"> Emotionally numb<br>
+                        <input type="text" name="q3_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q3_year" value="Increased stress/anxiety"> Increased stress/anxiety<br>
+                        <input type="checkbox" name="q3_year" value="Periods of depression"> Periods of depression<br>
+                        <input type="checkbox" name="q3_year" value="Strengthened resilience"> Strengthened resilience<br>
+                        <input type="checkbox" name="q3_year" value="Emotionally numb"> Emotionally numb<br>
+                        <input type="text" name="q3_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                <tr>
+                    <td>What was the biggest emotional challenge you faced?</td>
+                    <td>
+                        <input type="checkbox" name="q4_week" value="Fear of mortality"> Fear of mortality<br>
+                        <input type="checkbox" name="q4_week" value="Loss of independence"> Loss of independence<br>
+                        <input type="checkbox" name="q4_week" value="Struggles with self-image"> Struggles with self-image<br>
+                        <input type="checkbox" name="q4_week" value="Isolation/loneliness"> Isolation/loneliness<br>
+                        <input type="text" name="q4_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q4_months" value="Fear of mortality"> Fear of mortality<br>
+                        <input type="checkbox" name="q4_months" value="Loss of independence"> Loss of independence<br>
+                        <input type="checkbox" name="q4_months" value="Struggles with self-image"> Struggles with self-image<br>
+                        <input type="checkbox" name="q4_months" value="Isolation/loneliness"> Isolation/loneliness<br>
+                        <input type="text" name="q4_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q4_year" value="Fear of mortality"> Fear of mortality<br>
+                        <input type="checkbox" name="q4_year" value="Loss of independence"> Loss of independence<br>
+                        <input type="checkbox" name="q4_year" value="Struggles with self-image"> Struggles with self-image<br>
+                        <input type="checkbox" name="q4_year" value="Isolation/loneliness"> Isolation/loneliness<br>
+                        <input type="text" name="q4_year_other" placeholder="Other">
+                    </td>
+                </tr>
+                <tr>
+                    <td>How did you communicate your feelings to loved ones?</td>
+                    <td>
+                        <input type="checkbox" name="q5_week" value="Open discussions"> Open discussions<br>
+                        <input type="checkbox" name="q5_week" value="Keeping emotions private"> Keeping emotions private<br>
+                        <input type="checkbox" name="q5_week" value="Seeking support from specific individuals"> Seeking support from specific individuals<br>
+                        <input type="checkbox" name="q5_week" value="Avoiding conversations"> Avoiding conversations<br>
+                        <input type="text" name="q5_week_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q5_months" value="Open discussions"> Open discussions<br>
+                        <input type="checkbox" name="q5_months" value="Keeping emotions private"> Keeping emotions private<br>
+                        <input type="checkbox" name="q5_months" value="Seeking support from specific individuals"> Seeking support from specific individuals<br>
+                        <input type="checkbox" name="q5_months" value="Avoiding conversations"> Avoiding conversations<br>
+                        <input type="text" name="q5_months_other" placeholder="Other">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="q5_year" value="Open discussions"> Open discussions<br>
+                        <input type="checkbox" name="q5_year" value="Keeping emotions private"> Keeping emotions private<br>
+                        <input type="checkbox" name="q5_year" value="Seeking support from specific individuals"> Seeking support from specific individuals<br>
+                        <input type="checkbox" name="q5_year" value="Avoiding conversations"> Avoiding conversations<br>
+                        <input type="text" name="q5_year_other" placeholder="Other">
+                    </td>
+                </tr>                
+            </table>
+            <button type="button" id="nextStep">Go to Next Step</button>
+            <button type="button" id="goToFinalReflection">Go to Final Reflection</button>
+
+        </form>
+    </div>
+<script>
+    function saveResponses() {
+    let responses = JSON.parse(localStorage.getItem("formResponses")) || {};
+
+    // ✅ Clear existing values before storing new ones (Fixes duplicates)
+    document.querySelectorAll("input[type='checkbox']").forEach(input => {
+        if (responses[input.name]) {
+            responses[input.name] = responses[input.name].filter(val => val !== input.value);
+        }
+    });
+
+    // ✅ Store only checked checkboxes
+    document.querySelectorAll("input[type='checkbox']:checked").forEach(input => {
+        if (!responses[input.name]) {
+            responses[input.name] = [];
+        }
+        responses[input.name].push(input.value);
+    });
+
+    // ✅ Store only changed dropdown & text input values
+    document.querySelectorAll("select, input[type='text'], input[type='number']").forEach(input => {
+        if (input.value.trim() !== "" && input.value !== input.defaultValue) {
+            responses[input.id] = input.value;
+        } else {
+            delete responses[input.id]; // Remove defaults
+        }
+    });
+
+    localStorage.setItem("formResponses", JSON.stringify(responses));
+    console.log("Responses Saved:", responses);
+}
+
+    
+    // ✅ Save responses and go to the next page
+    document.getElementById("nextStep").addEventListener("click", function() {
+        saveResponses();
+        window.location.href = "Spiritual_Aspect.html"; // Update with actual next page name
+    });
+    
+    // ✅ Save responses and go to the final reflection
+    document.getElementById("goToFinalReflection").addEventListener("click", function() {
+        saveResponses();
+        window.location.href = "final_reflection.html";
+    });
+</script>
+    
+</body>
+</html>
