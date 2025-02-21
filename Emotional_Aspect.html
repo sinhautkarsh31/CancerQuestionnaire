@@ -6,6 +6,7 @@
     <title>Emotional Aspect</title>
     <style>
             /* ✅ General Styles */
+        /* ✅ General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -28,26 +29,36 @@
             text-align: center;
         }
 
-        /* ✅ Table Fixes */
+        /* ✅ Fix Table Formatting */
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
             table-layout: fixed; /* Prevents columns from shrinking unevenly */
             overflow-x: auto;
-            white-space: nowrap; /* Prevents unwanted line breaks */
+            white-space: nowrap; /* Prevents text wrapping */
         }
 
+        /* ✅ Ensures Equal Column Widths */
         th, td {
             border: 1px solid #ddd;
             padding: 10px;
             text-align: left;
             word-wrap: break-word;
             white-space: normal;
+            width: 25%; /* Ensures consistent column sizing */
         }
 
+        /* ✅ Keeps headers distinguishable */
         th {
             background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        /* ✅ Ensures checkboxes align correctly */
+        td input[type="checkbox"] {
+            transform: scale(1.2); /* Makes checkboxes larger */
+            margin-right: 8px;
         }
 
         /* ✅ Button Styling */
@@ -75,17 +86,26 @@
                 padding: 10px;
             }
 
+            /* ✅ Allow horizontal scrolling on mobile */
             table {
-                display: table; /* Keeps columns in one row */
-                overflow-x: auto; /* Enables horizontal scrolling */
+                display: block;
+                overflow-x: auto;
                 white-space: nowrap;
             }
 
+            /* ✅ Prevents columns from stacking */
             th, td {
-                display: table-cell; /* Ensures columns stay in a row */
-                width: auto; /* Prevents forced full width */
+                display: table-cell;
+                width: auto;
+            }
+
+            /* ✅ Fix Checkbox & Text Alignment */
+            td {
+                vertical-align: middle;
+                text-align: left;
             }
         }
+
 
 
     </style>
